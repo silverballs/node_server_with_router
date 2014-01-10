@@ -6,3 +6,9 @@ http.createServer(function(request, response){
 	response.end();
 
 }).listen(8888);
+
+ http.createServer(onRequest).listen(8888);
+  console.log("Server has started.");
+}
+
+exports.start = start;
